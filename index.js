@@ -40,7 +40,7 @@ drawArea.style.flexWrap = "wrap"
 window.onload = function () {
   generatedGridcells(16, drawArea); // Loads Our first function at the start of page
   document.body.appendChild(drawArea); //adds drawArea to the body on start up
-  rgbButton.addEventListener("mouseover", () => { // Loads our random color button with update cells function with arguments of draw Area and RandomColor 
+  rgbButton.addEventListener("click", () => { // Loads our random color button with update cells function with arguments of draw Area and RandomColor 
     updateCells(drawArea, randomColor); //calls updatecells with the argument drawArea, RandomColor Function
   }),
     sizeButton.addEventListener("click", () => { // adds the prompt button on start up
